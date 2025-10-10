@@ -9,15 +9,15 @@ play_game = True
 
 while play_game:
     if win % 3 == 0 and not win == 0:
-        force_adversaire =random.randint(4,5)
+        force_adversaire = random.randint(4,5) + random.randint(4,5)
         print(f"Vous avez trouver un adversaire special vous avez  {niveau_vie} hp et le  Boss a {force_adversaire} hp que voulez vous faire ? \n")
     else:
-        force_adversaire = random.randint(1,2)
+        force_adversaire = random.randint(1,5) + random.randint(1,5)
         print(f" Vous avez {win} victoire")
         print(f"Vous avez {niveau_vie} hp et le monstre a {force_adversaire} hp que voulez vous faire ? \n")
 
-    lancer_de = random.randint(1,6)
-    ####afficher info monstre et info joueur
+    lancer_de = random.randint(1,6) + random.randint(1,6)
+
 
     choix_jeux = int(input("1- Combattre cet adversaire \n2- Contourner cet adversaire et aller ouvrir une autre porte "
                            "\n3- Afficher les règles du jeu \n4- Quitter la partie \n Quel est votre choix ?:"))
