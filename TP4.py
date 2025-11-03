@@ -1,0 +1,57 @@
+# code
+#Cédric couture
+
+# Binouche
+
+from math import pi
+
+
+class StringFoo:
+    def __init__(self):
+        self.message = ""
+
+    def set_string(self):
+        self.message = input("message: ")
+
+    def print_string(self):
+        print(f"{self.message.upper()}")
+
+
+stringfoo = StringFoo()
+stringfoo.set_string()
+stringfoo.print_string()
+
+
+class Rectangle:
+    def __init__(self):
+        self.largeur = None
+        self.longueur = None
+
+    def calcul_aire(self):
+        self.largeur = input("Largeur: ")
+        self.longueur = input("Longeur: ")
+
+    def afficher_infos(self):
+        print(float(self.largeur) * float(self.longueur))
+
+
+rectangle = Rectangle()
+rectangle.calcul_aire()
+rectangle.afficher_infos()
+
+
+class Cercle:
+    def __init__(self):
+        self.rayon = None
+
+    def calcul_aire(self):
+        self.rayon = input("Rayon: ")
+        return float(self.rayon) * float(self.rayon) * pi
+
+    def calcul_circonference(self):
+        return float(self.rayon) * pi * 2
+
+
+cercle = Cercle()
+print(f"Aire: {cercle.calcul_aire()}")
+print(f"Circonférence: {cercle.calcul_circonference()}")
