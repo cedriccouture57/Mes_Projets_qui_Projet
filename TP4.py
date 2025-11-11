@@ -4,7 +4,7 @@
 # Binouche
 
 from math import pi
-
+import random
 
 class StringFoo:
     def __init__(self):
@@ -55,3 +55,18 @@ class Cercle:
 cercle = Cercle()
 print(f"Aire: {cercle.calcul_aire()}")
 print(f"Circonférence: {cercle.calcul_circonference()}")
+
+class Hero :
+    def __init__(self, nb_vie, force_atk, force_def, nom):
+        self.nb_vie = nb_vie
+        self.force_atk = force_atk
+        self.force_def = force_def
+        self.nom = nom
+    def atk(self, dmg_infliger):
+        dmg_infliger = random.randint(1,6) + self.force_atk
+
+    def deff(self, dmg_recu):
+        if dmg_recu <= self.force_def :
+            print("Youppi tu n'as pas pris de dégats")
+        else
+            self.nb_vie -= dmg_recu - self.force_def
