@@ -56,17 +56,34 @@ cercle = Cercle()
 print(f"Aire: {cercle.calcul_aire()}")
 print(f"Circonférence: {cercle.calcul_circonference()}")
 
-class Hero :
-    def __init__(self, nb_vie, force_atk, force_def, nom):
-        self.nb_vie = nb_vie
-        self.force_atk = force_atk
-        self.force_def = force_def
+
+class Hero:
+    def __init__(self, nom):
+        self.nb_vie = random.randint(1, 10) + random.randint(1, 10)
+        self.force_atk = random.randint(1, 6)
+        self.force_def = random.randint(1, 6)
         self.nom = nom
-    def atk(self, dmg_infliger):
-        dmg_infliger = random.randint(1,6) + self.force_atk
+
+
+    def atk(self):
+        return random.randint(1,6) + self.force_atk
 
     def deff(self, dmg_recu):
         if dmg_recu <= self.force_def :
             print("Youppi tu n'as pas pris de dégats")
-        else
+        else:
             self.nb_vie -= dmg_recu - self.force_def
+
+    def est_vivant(self):
+        return self.nb_vie > 0
+
+
+h = Hero("Cédric")
+
+dommage = h.atk()
+h.nb_vie = 0
+
+if h.est_vivant():
+   print("Youhou!")
+else:
+    print("RIP!")
