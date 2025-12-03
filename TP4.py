@@ -5,6 +5,7 @@
 
 from math import pi
 import random
+from dataclasses import dataclass
 
 class StringFoo:
     def __init__(self):
@@ -57,13 +58,22 @@ print(f"Aire: {cercle.calcul_aire()}")
 print(f"Circonférence: {cercle.calcul_circonference()}")
 
 
+@dataclass
+class DonneesDnD:
+    force: int = random.randint(1,20)
+    dex:  int = random.randint(1,20)
+    con:  int = random.randint(1,20)
+    intelligence:  int = random.randint(1,20)
+    wis:  int = random.randint(1,20)
+    cha:  int = random.randint(1,20)
+
 class Hero:
     def __init__(self, nom):
         self.nb_vie = random.randint(1, 10) + random.randint(1, 10)
         self.force_atk = random.randint(1, 6)
         self.force_def = random.randint(1, 6)
         self.nom = nom
-
+        self.stats = DonneesDnD()
 
     def atk(self):
         return random.randint(1,6) + self.force_atk
@@ -81,9 +91,14 @@ class Hero:
 h = Hero("Cédric")
 
 dommage = h.atk()
-h.nb_vie = 0
+h.nb_vie = 11
 
 if h.est_vivant():
    print("Youhou!")
 else:
     print("RIP!")
+
+
+
+stats = DonneesDnD()
+
