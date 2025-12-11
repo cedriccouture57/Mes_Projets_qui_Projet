@@ -1,7 +1,7 @@
 import random
 pouette = int
 class Npc:
-    def __init__(self, force, agilite,constitution, intelligence, sagesse, charisme):
+    def __init__(self, force, agilite ,constitution, intelligence, sagesse, charisme):
         self.force = force
         self.agilite = agilite
         self.constitution = constitution
@@ -14,6 +14,12 @@ class Npc:
         self.espece = "porte"
         self.pv = random.randint(1,20)
         self.profession = "portier"
+
+    def afficher_stats(self):
+        print(f"Force = {self.force} agillite = {self.agilite} constitution = {self.constitution} intelligence = {self.intelligence} sagesse = {self.sagesse} charisme = {self.charisme}")
+
+
+
 
 def binouche():
     de = [random.randint(1,6), random.randint(1,6), random.randint(1,6), random.randint(1,6)]
