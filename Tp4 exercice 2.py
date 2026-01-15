@@ -48,3 +48,40 @@ class Kobold(Npc):
 k = Kobold("Binouche")
 k.afficher_stats()
 
+class Hero(Npc):
+
+    def __init__(self, nom):
+        super().__init__()
+        self.race = ("Humain")
+        self.nom = nom
+    def attaquer(self, cible):
+        print(f"{self.nom} attaque {cible.nom}.")
+        attaque = random.randint(1,20)
+        if attaque == 20:
+            cible.subir_dommage(random.randint(1, 8))
+        elif attaque == 1:
+            print("Pouah! Tu es misérable.")
+        else:
+            if attaque >= cible.armure:
+                cible.subir_dommage(random.randint(1, 6))
+            else:
+                print("Holala ta rater pouette pouette")
+
+class George(Npc):
+    def __init__(self):
+        super().__init__()
+        self.race = "Humain"
+        self.nom = "Ennemi"
+
+    def subir_dommage(self, qte):
+        print(f"Subit {qte} dommage(s)")
+
+
+h = Hero("Cédric")
+g = George()
+g2 = George()
+g2.nom = "Trump"
+
+h.attaquer(g2)
+
+h.attaquer(g)
