@@ -1,4 +1,17 @@
 import random
+from enum import Enum
+
+class Alignement(Enum) :
+    LAWFUL_GOOD = 0
+    LAWFUL_NEUTRAL = 1
+    LAWFUL_EVIL = 2
+    NEUTRAL_GOOD = 3
+    TRUE_NEUTRAL = 4
+    NEUTRAL_EVIL = 5
+    CHAOTIC_GOOD = 6
+    CHAOTIC_NEUTRAL = 7
+    CHAOTIC_EVIL = 8
+    NON_DEFINI = 9
 
 
 def calcul_stats():
@@ -22,6 +35,7 @@ class Npc:
         self.espece = ""
         self.pv = random.randint(1,20)
         self.profession = ""
+        self.alignement = Alignement.NON_DEFINI
 
     def afficher_stats(self):
         print(f"Force = {self.force} agillite = {self.agilite} constitution = {self.constitution} intelligence = {self.intelligence} sagesse = {self.sagesse} charisme = {self.charisme}")
