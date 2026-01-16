@@ -37,6 +37,10 @@ class Npc:
         self.profession = ""
         self.alignement = Alignement.NON_DEFINI
 
+    def est_vivant(self):
+        return self.pv > 0
+
+
     def afficher_stats(self):
         print(f"Force = {self.force} agillite = {self.agilite} constitution = {self.constitution} intelligence = {self.intelligence} sagesse = {self.sagesse} charisme = {self.charisme}")
 
@@ -44,7 +48,7 @@ class Npc:
 n = Npc()
 n.afficher_stats()
 
-
+n.pv = 1
 class Kobold(Npc):
     def __init__(self, nom):
         super().__init__()
@@ -54,6 +58,13 @@ class Kobold(Npc):
     def afficher_stats(self):
         print(f"Nom = {self.nom}")
         super().afficher_stats()
+
+
+
+if n.est_vivant():
+        print("Youhou!")
+else:
+        print("RIP!")
 
 
 
