@@ -72,7 +72,19 @@ class GameView(arcade.View):
         arcade.draw_line(252, 191, 246, 189, arcade.csscolor.BLACK, 1)
         arcade.draw_line(245, 205, 258, 205, arcade.csscolor.BLACK, 1)
         arcade.draw_line(258, 205, 261, 201, arcade.csscolor.BLACK, 1)
-        arcade.draw_lines([(270,218),()], arcade.color.BLACK, 1)
+        arcade.draw_lines([(270,218),(328,216)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(328,216 ), (324,214) ], arcade.color.BLACK, 1)
+
+        arcade.draw_lines([(324,214 ), (272,211)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(252,205 ), (272,212 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(267,210 ), (271,205 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(271,205 ), (300,207 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(300,207 ), (310,213 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(260,201 ), (232,199 )], arcade.color.BLACK, 1)
+
+
+
+
 
         # This command should happen before we start drawing. It will clear
         # the screen to the background color, and erase what we drew last frame.
