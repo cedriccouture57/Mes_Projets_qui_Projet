@@ -81,6 +81,31 @@ class GameView(arcade.View):
         arcade.draw_lines([(271,205 ), (300,207 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(300,207 ), (310,213 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(260,201 ), (232,199 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(328,216 ), (331,219)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(331,217 ), (372,219 )], arcade.color.BLACK, 1)
+
+        arcade.draw_arc_outline(350,227,19,100,arcade.csscolor.BLACK,20, 180, 2, 90, 20)
+        arcade.draw_lrbt_rectangle_filled(274,430,226 ,400 ,arcade.color.BABY_BLUE)
+        arcade.draw_arc_outline(350, 222, 16, 90, arcade.csscolor.BLACK, 20, 180, 2, 90, 20)
+
+
+
+        arcade.draw_lines([(373,234 ), (368,236 )], arcade.color.BLACK, 1)
+
+
+
+
+
+        #Suite
+        arcade.draw_lines([(60,229 ), (70,231 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(70,231 ), (73,271 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(74, 271), (68,273 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(68,273 ), (68,275 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(68, 275), (74,277 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(73,277 ), (71,292 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(71,292 ), (90,294 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(90,294 ), (107,281 )], arcade.color.BLACK, 1)
+
 
 
 
