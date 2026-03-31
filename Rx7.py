@@ -100,8 +100,19 @@ class GameView(arcade.View):
         arcade.draw_lines([(356,238 ), (352,242 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(352,242 ), (340,249 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(397, 228), (395, 229)], arcade.color.BLACK, 1)
-
-
+        arcade.draw_lines([(397, 228), (395, 229)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(340, 248), (336,251 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(336,251 ), (332,251 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(332, 251), (324, 253)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(324, 253), (304,250 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(304, 250), (290,248 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(290, 248), (264,246 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(264,246 ), (172,242 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(172, 242), (177,245 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(177, 245), ( 178,247 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(178, 247), (168, 249)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(168, 249), (156,247 )], arcade.color.BLACK, 1)
+        #arcade.draw_lines([(, 228), (395, 229)], arcade.color.BLACK, 1)
         #Suite
         arcade.draw_lines([(60,229 ), (70,231 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(70,231 ), (73,271 )], arcade.color.BLACK, 1)
@@ -111,8 +122,8 @@ class GameView(arcade.View):
         arcade.draw_lines([(73,277 ), (71,292 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(71,292 ), (90,294 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(90,294 ), (107,281)], arcade.color.BLACK, 1)
-
-
+        arcade.draw_lines([(73,276 ), (118,281 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(118,281 ), (122,279)], arcade.color.BLACK, 1)
 
 
 
