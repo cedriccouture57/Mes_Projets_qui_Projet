@@ -45,6 +45,13 @@ class GameView(arcade.View):
         """
         self.clear()
         #
+
+        #couleur
+
+        arcade.draw_polygon_filled([(43, 223), (60, 230), (63, 208), (44, 211)], arcade.color.LIGHT_GRAY)
+        arcade.draw_triangle_filled()
+
+
         arcade.draw_line(44,223 ,60,230 ,arcade.csscolor.BLACK ,1)
         arcade.draw_line(44, 223, 44, 210, arcade.csscolor.BLACK, 1)
         arcade.draw_line(44, 210, 63, 207, arcade.csscolor.BLACK, 1)
@@ -112,7 +119,9 @@ class GameView(arcade.View):
         arcade.draw_lines([(177, 245), ( 178,247 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(178, 247), (168, 249)], arcade.color.BLACK, 1)
         arcade.draw_lines([(168, 249), (156,247 )], arcade.color.BLACK, 1)
-        #arcade.draw_lines([(, 228), (395, 229)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(156,246 ), (116,274 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(73,271 ), (121,276 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(121,276 ), (124,280 )], arcade.color.BLACK, 1)
         #Suite
         arcade.draw_lines([(60,229 ), (70,231 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(70,231 ), (73,271 )], arcade.color.BLACK, 1)
@@ -124,11 +133,35 @@ class GameView(arcade.View):
         arcade.draw_lines([(90,294 ), (107,281)], arcade.color.BLACK, 1)
         arcade.draw_lines([(73,276 ), (118,281 )], arcade.color.BLACK, 1)
         arcade.draw_lines([(118,281 ), (122,279)], arcade.color.BLACK, 1)
+        #inside outline
+        arcade.draw_lines([(69,230 ), (278,241 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(278,241 ), (304,237)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(304,237 ), (340,232 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(340,232 ), (368,236 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(72,233 ), (87,245 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(87,245 ), (154,248 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(269,229 ), (308,228 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(308,228 ), (327,226 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(327,226 ), (303,223 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(303,223 ), (286,224 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(286,224 ), (291,226 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(291, 226), (269,229 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(281,218 ), (244,222 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(61,229 ), (63,206 )], arcade.color.BLACK, 1)
+
+        arcade.draw_lines([(99,213 ), (125,217 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(125,217 ), (158,218 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(44,217 ), (62,220 )], arcade.color.BLACK, 1)
+        arcade.draw_lines([(44,212), (62,214)], arcade.color.BLACK, 1)
+        arcade.draw_lines([(44,220 ), (62,226 )], arcade.color.BLACK, 1)
+
+
 
 
 
 
         # This command should happen before we start drawing. It will clear
+
         # the screen to the background color, and erase what we drew last frame.
 
         #
