@@ -15,5 +15,7 @@ def draw_information():
     global mouseX
     global mouseY
     arcade.draw.draw_lrbt_rectangle_filled(mouseX+20, mouseX+80, mouseY-25, mouseY+5, (0, 0, 0))
-    arcade.draw_text("X:"+str(mouseX), mouseX+20, mouseY-10, arcade.color.WHITE, 12)
-    arcade.draw_text("Y:"+str(mouseY), mouseX+20, mouseY-23, arcade.color.WHITE, 12)
+    t = arcade.Text("X:"+str(mouseX), mouseX+20, mouseY-10, arcade.color.WHITE, 12)
+    t.draw()
+    t = arcade.Text("Y:"+str(mouseY), mouseX+20, mouseY-23, arcade.color.WHITE, 12)
+    t.draw()
