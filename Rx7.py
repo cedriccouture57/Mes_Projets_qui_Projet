@@ -64,8 +64,20 @@ class GameView(arcade.View):
         arcade.draw_line(212,187,221,186, arcade.color.BLUE_SAPPHIRE)
         arcade.draw_polygon_filled([(178,204 ), (194,209 ), (185,220 ), (257,246 ), (172,243 ), (152,216 )],arcade.color.LIGHT_CYAN)
 
+        arcade.draw_polygon_filled([(367,239 ), (364,228 ), (346,220 ), (330,218 ), (325,214 ), (308,212),(283,219),(252,240)],arcade.color.LIGHT_CYAN)
+        arcade.draw_polygon_filled([(255,224 ), (272,224 ), (255,241 ), (276,246 ), (252,246 ), (240,240 )],arcade.color.GRAY)
 
+        arcade.draw_polygon_filled([(252,240 ), (300,239 ), (297,249 ), (275,247 )],arcade.color.BLUE_SAPPHIRE)
+        arcade.draw_polygon_filled([(296,248), (317,252), (330,251), (356,239), (352,233), (342,233),(300,239)], arcade.color.DARK_SLATE_GRAY)
+        arcade.draw_line(295,248,326,253,arcade.color.DARK_SLATE_GRAY)
+        arcade.draw_line(319,252 ,331,250 , arcade.color.DARK_SLATE_GRAY,3)
+        arcade.draw_line(330,251 ,349 ,241 , arcade.color.DARK_SLATE_GRAY,4)
+        arcade.draw_line(341,249 ,352 ,241 , arcade.color.DARK_SLATE_GRAY,2)
+        arcade.draw_line(298,240 ,339 ,233 , arcade.color.DARK_SLATE_GRAY,3)
 
+        arcade.draw_line(296 ,248 ,299,239 , arcade.color.BLACK)
+
+        arcade.draw_polygon_filled([(300,216 ), (352,230 ), (379,233 ), (376,219 )],arcade.color.BLUE_SAPPHIRE)
 
 
         arcade.draw_line(44,223 ,60,230 ,arcade.csscolor.BLACK ,1)
