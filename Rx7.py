@@ -77,9 +77,27 @@ class GameView(arcade.View):
 
         arcade.draw_line(296 ,248 ,299,239 , arcade.color.BLACK)
 
-        arcade.draw_polygon_filled([(300,216 ), (352,230 ), (379,233 ), (376,219 )],arcade.color.BLUE_SAPPHIRE)
+        arcade.draw_polygon_filled([(284,217 ), (334,217 ),(379,235) ,(347,234 )],arcade.color.BLUE_SAPPHIRE)
+
+        arcade.draw_polygon_filled([(150,248), (172,248), (176,247), (150,239)], arcade.color.BLUE_SAPPHIRE)
+        arcade.draw_polygon_filled([(62,230), (138,233), (124,220), (143,206),(134,206),(123,211),(62,212)], arcade.color.BLUE_SAPPHIRE)
+        arcade.draw_polygon_filled([(63,213 ), (123,211 ), (131,205 ), (63,207)], arcade.color.LIGHT_CYAN)
+        arcade.draw_polygon_filled([(247,206), (272,217), (297,218), (307,213),(299,207),(271,206),(267,210),(251,206)], arcade.color.LIGHT_CYAN)
+        arcade.draw_polygon_filled([(243,205 ), (259,204 ), (259,200 ), (235,199 )], arcade.color.LIGHT_CYAN)
+        arcade.draw_polygon_filled([(229,196 ), (246,195 ), (251,191 ), (242,188),(211,188)], arcade.color.LIGHT_CYAN)
+        arcade.draw_point(106,280,arcade.color.BLUE_SAPPHIRE,1)
+        arcade.draw_circle_outline(107,258,8,arcade.color.YELLOW,1,0,15)
+        arcade.draw_line(102,261,104,258,arcade.color.YELLOW)
+        arcade.draw_line(104,258 ,106 ,261 , arcade.color.YELLOW)
+        arcade.draw_line(108,258 ,110 ,261 , arcade.color.YELLOW)
+        arcade.draw_line(110,258 ,112 ,261 , arcade.color.YELLOW)
+        arcade.draw_line(105,256 , 107,253 , arcade.color.YELLOW)
+        arcade.draw_line(107,253 , 109, 256, arcade.color.YELLOW)
+        arcade.draw_polygon_filled([(379,234), (387,232 ), (377,220 ), (336,219 )],arcade.color.LIGHT_GRAY)
+        arcade.draw_line(360,234,364,235,arcade.color.BLUE_SAPPHIRE)
 
 
+        arcade.draw_line(399,227 , 412,227 , arcade.csscolor.BLACK, 1)
         arcade.draw_line(44,223 ,60,230 ,arcade.csscolor.BLACK ,1)
         arcade.draw_line(44, 223, 44, 210, arcade.csscolor.BLACK, 1)
         arcade.draw_line(44, 210, 63, 207, arcade.csscolor.BLACK, 1)
