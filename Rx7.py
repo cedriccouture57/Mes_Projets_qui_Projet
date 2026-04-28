@@ -46,7 +46,7 @@ class GameView(arcade.View):
         self.clear()
         #
 
-        #couleur
+        ##couleur
 
         arcade.draw_polygon_filled([(43, 223), (60, 230), (63, 208), (44, 211)], arcade.color.LIGHT_GRAY)
         arcade.draw_polygon_filled([(67,276 ), (70,272 ), (117,280 ), (125,278 )], arcade.color.AERO_BLUE)
