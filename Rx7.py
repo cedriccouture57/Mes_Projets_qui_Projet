@@ -46,8 +46,12 @@ class GameView(arcade.View):
         self.clear()
         #
 
-        ##couleur
 
+        #texte
+
+        text = arcade.Text("JAS39 -GRIPEN", 110, 400, arcade.csscolor.WHITE, 50)
+        text.draw()
+        ##couleur
         arcade.draw_polygon_filled([(43, 223), (60, 230), (63, 208), (44, 211)], arcade.color.LIGHT_GRAY)
         arcade.draw_polygon_filled([(67,276 ), (70,272 ), (117,280 ), (125,278 )], arcade.color.AERO_BLUE)
         arcade.draw_polygon_filled([(72,293 ), (90,293 ), (171,234 ), (71,231 )], arcade.color.BLUE_SAPPHIRE)
